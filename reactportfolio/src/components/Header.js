@@ -17,8 +17,37 @@ import {
 } from 'mdb-react-ui-kit';
 
 function Header() {
+    const [showBasic, setShowBasic] = useState(false);
+
   return (
-   <div>Header</div>
+    <header>
+        <MDBNavbar expand='lg' light bgColor='yellow'>
+
+            <MDBContainer fluid>
+
+                    <MDBNavbarNav right className='mb-2 mb-lg-0'>
+                        
+                        <MDBNavbarItem active>
+                            <MDBNavbarLink aria-current='page' href='#'>Home</MDBNavbarLink>
+                        </MDBNavbarItem>
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='#'>About</MDBNavbarLink>
+                        </MDBNavbarItem>
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='#'>Resume</MDBNavbarLink>
+                        </MDBNavbarItem>
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='#'>Projects</MDBNavbarLink>
+                        </MDBNavbarItem>
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='#'>Contact</MDBNavbarLink>
+                        </MDBNavbarItem>
+
+
+                    </MDBNavbarNav>
+            </MDBContainer>
+        </MDBNavbar>
+    </header>
   );
 }
 

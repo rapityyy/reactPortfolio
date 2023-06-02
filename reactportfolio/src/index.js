@@ -5,11 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import './styles.css';
 import App from './App';
 import Header from './components/Header.js';
+import Navbar from './components/Navbar.js';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
+    {/* <Header /> */}
+    {/* <Navbar /> */}
     <App />
   </React.StrictMode>
 );

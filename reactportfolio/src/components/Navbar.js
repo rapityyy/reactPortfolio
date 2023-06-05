@@ -22,29 +22,35 @@ function Navbar() {
     const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <header className='navbar-home'>
-        <MDBNavbar expand='lg' light bgColor='white'>
+    <header className='navbar-header'>
 
+        <div className='logo-home'>
+            <a aria-current='page' href='/'><i className='fas fa-a fa-lg'></i></a>
+        </div>
+
+        <MDBNavbar expand='lg'>
             <MDBContainer fluid>
+                    <MDBNavbarNav right className='mb-2 mb-lg-0 flex-column'>
 
-                    <MDBNavbarNav right className='mb-2 mb-lg-0 '>
-                        
-                        <MDBNavbarItem active>
-                            <MDBNavbarLink aria-current='page' href='#'>Home</MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>About</MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>Resume</MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>Projects</MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>Contact</MDBNavbarLink>
+                        <MDBNavbarItem active className='navbar-home-icon'>
+                            <MDBNavbarLink aria-current='page' href='#Home'><i className='fas fa-home fa-lg navbar-icon'></i></MDBNavbarLink>
                         </MDBNavbarItem>
 
+                        <MDBNavbarItem className='navbar-item'>
+                            <MDBNavbarLink href='#About'><i className='fas fa-user fa-lg navbar-icon'></i></MDBNavbarLink>
+                        </MDBNavbarItem>
+
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='#Resume'><i class="fas fa-file fa-lg navbar-icon"></i></MDBNavbarLink>
+                        </MDBNavbarItem>
+
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='#Projects'><i class="fas fa-bars-progress fa-lg navbar-icon"></i></MDBNavbarLink>
+                        </MDBNavbarItem>
+
+                        <MDBNavbarItem>
+                            <MDBNavbarLink href='#Contact'><i className='fas fa-phone fa-lg navbar-icon'></i></MDBNavbarLink>
+                        </MDBNavbarItem>
 
                     </MDBNavbarNav>
             </MDBContainer>

@@ -13,76 +13,121 @@ body {
 
 
 
-  /* NEW Added CSS styling*/
+/****************************************************************** NEW Added CSS styling *************************************************************/
+.App{
+  display: flex;
+}
 
-.navbar-home{
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80px;                  /* Keep same as .content height */
   position: fixed;
-  top: 0;
   left: 0;
-  bottom: 0;
-  width: 200px; /* Remove the quotes around the width value */
-  z-index: 100;
+  top: 0;
+  height: 100vh;                /* Make it span the whole vertical same as page */
+
+  /*TEST color*/
+  /* background-color: red;       */
+  background-color: #0C0C14;
+
 }
 
-.App-home{
-  color: blue;
+.navbar-header{
+  text-align: center;
+  line-height:4em;
+
+  /*TEST color*/
+  /* background-color: yellow;    */
+  background-color: #0C0C14;
+
+}
+
+.navbar-header .nav-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: wheat;
+  margin-top: 5px;
+  color: white;
+}
+
+.logo-home{
+  display: flex;
+  background-color: #FF9301;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.navbar-home-icon{
+  padding-top: 50px;
+}
+
+.navbar-icon{
+  color: white;
+}
+
+/*********************** PAGE CONTENT ***********************/
+.content {
+  margin-left: 80px;  /* Keep same as .navbar-container height */
+  color: white;     /* All content text-color = white */
+}
+
+.page {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  height: 100vh;  /* Making each Div full-screen */
+}
+
+.home-section{
+  background-color: #000000;
+  color: white;
+}
+
+.about-section{
+  background-color: wheat;
+}
+.resume-section{
+  background-color: gray;
+}
+.projects-section{
+  background-color: blue;
+}
+.contact-section{
+  background-color: purple;
+}
+/************************************************************/
+
+/************************ HOME ******************************/
+.home-top-container, .home-top-phone-email{
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-top-languague{
+  margin-left: auto;
+}
+
+.phone, .email{
+  margin-right: 50px;
+}
+/************************************************************/
+
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;            /* Making main Div full-screen */
+}
+
+.main-content-inner {
+  text-align: center;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* APP */
-  /* .App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-   */

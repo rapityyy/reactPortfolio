@@ -11,7 +11,7 @@ import '../styles.css';
 function Contact() {
 
   return (
-    <div className='main-content'>
+    <div className='page main-content'>
       <div className='main-content-inner'>     
           <h1>Contact Page</h1>
           <p>This is the Contact section section of my portfolio website.</p>

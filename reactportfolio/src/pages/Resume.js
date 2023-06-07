@@ -11,7 +11,7 @@ import '../styles.css';
 function Resume() {
 
   return (
-    <div className='main-content'>
+    <div className='page main-content'>
       <div className='main-content-inner'>     
           <h1>Resume Page</h1>
           <p>This is the Resume section section of my portfolio website.</p>

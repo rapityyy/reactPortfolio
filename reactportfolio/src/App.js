@@ -4,6 +4,8 @@ import React from 'react';
 import Header from './components/Header.js';
 import Navbar from './components/Navbar.js';
 import AboutMe from './pages/About.js';
+import AboutMe2 from './pages/About-page2.js';
+
 import Home from './pages/Home.js';
 import Resume from './pages/Resume.js';
 import Projects from './pages/Projects.js';
@@ -22,19 +24,19 @@ function App() {
           <Home />
         </div>
 
-        <div id='About' className='page about-section'>
+        <div id='About' className='about-section page-taller'>
           <AboutMe />
         </div>
 
-        <div id='Resume' className='page resume-section'>
+        <div id='Resume' className='resume-section'>
           <Resume />
         </div>
 
-        <div id='Projects' className='page projects-section'>
+        <div id='Projects' className='projects-section'>
           <Projects />
         </div>
 
-        <div id='Contact' className='page contact-section'>
+        <div id='Contact' className='contact-section'>
           <Contact />
         </div>
 

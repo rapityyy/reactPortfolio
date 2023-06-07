@@ -73,6 +73,7 @@ body {
 .content {
   margin-left: 80px;  /* Keep same as .navbar-container height */
   color: white;     /* All content text-color = white */
+  
 }
 
 .page {
@@ -89,7 +90,8 @@ body {
 }
 
 .about-section{
-  background-color: wheat;
+  /* background-color: wheat; */
+  background-color: #0E0E17;
 }
 .resume-section{
   background-color: gray;
@@ -107,6 +109,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.home-top-container{
+  padding-top: 10px;
+  padding-left: 25px;
+  
+}
 
 .home-top-languague{
   margin-left: auto;
@@ -115,9 +122,35 @@ body {
 .phone, .email{
   margin-right: 50px;
 }
+
+
+.home-main-content{
+  width: 70%;               /* Making the width 70% of the page */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #AAA;
+  color: #fff;
+}
+
+/* .home-desc{
+  width: 70%;
+} */
 /************************************************************/
 
 
+/* Sharing between all the section PAGES */
 .main-content {
   display: flex;
   justify-content: center;
@@ -126,8 +159,52 @@ body {
 }
 
 .main-content-inner {
+  text-align: left;
+}
+
+.about-container{
+  justify-content: space-around;
+  display:flex;
+
+}
+.about-left{
+  width: 50%;
+}
+.about-right{
   text-align: center;
 }
 
 
+.about-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media i {
+  font-size: 24px;
+}
+
+
+.about-card-box{
+  background-color: #000 !important;
+}
+
+.about-row{
+  text-align: left;
+}
+
+.page-taller{
+  height: 250vh;
+}
 

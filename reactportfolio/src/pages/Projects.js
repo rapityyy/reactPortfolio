@@ -11,7 +11,7 @@ import '../styles.css';
 function Projects() {
 
   return (
-    <div className='main-content'>
+    <div className='page main-content'>
       <div className='main-content-inner'>     
           <h1>Projects Page</h1>
           <p>This is the Projects section section of my portfolio website.</p>

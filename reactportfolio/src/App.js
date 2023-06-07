@@ -20,25 +20,25 @@ function App() {
       </div>
 
       <div className='content'>
-        <div id='Home' className='page home-section'>
+        <section id='Home' className='page home-section'>
           <Home />
-        </div>
+        </section>
 
-        <div id='About' className='about-section page-taller'>
+        <section id='About' className='about-section page-taller'>
           <AboutMe />
-        </div>
+        </section>
 
-        <div id='Resume' className='resume-section'>
+        <section id='Resume' className='resume-section'>
           <Resume />
-        </div>
+        </section>
 
-        <div id='Projects' className='projects-section'>
+        <section id='Projects' className='projects-section'>
           <Projects />
-        </div>
+        </section>
 
-        <div id='Contact' className='contact-section'>
+        <section id='Contact' className='contact-section'>
           <Contact />
-        </div>
+        </section>
 
       </div>
     </div>

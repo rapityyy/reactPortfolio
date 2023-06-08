@@ -86,6 +86,7 @@ function AboutMe() {
           </div>
 
           <div className='about-container-2'>
+            <h4 className='section-title'>What I do</h4>
             <MDBRow>
                 <MDBCol>
                   <MDBCard className='about-card-box'>
@@ -113,8 +114,6 @@ function AboutMe() {
                 </MDBCol>
               </MDBRow>
           </div>
-
-          {/* <AboutMeComp /> */}
 
       </div>
     </span>

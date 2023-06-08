@@ -28,6 +28,8 @@ body {
   top: 0;
   height: 100vh;                /* Make it span the whole vertical same as page */
 
+  z-index: 100;
+
   /*TEST color*/
   /* background-color: red;       */
   background-color: #0C0C14;
@@ -74,6 +76,24 @@ body {
   margin-left: 80px;  /* Keep same as .navbar-container height */
   color: white;     /* All content text-color = white */
   
+  /* height: 100vh; */
+  /* height: calc(100vh * [number of sections]); */
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.section{
+  height: 100vh;
+}
+
+.scroll-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .page {
@@ -81,7 +101,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
 
-  height: 100vh;  /* Making each Div full-screen */
+  /* height: 100vh;  */
 }
 
 .home-section{
@@ -144,9 +164,6 @@ body {
   color: #fff;
 }
 
-/* .home-desc{
-  width: 70%;
-} */
 /************************************************************/
 
 
@@ -155,7 +172,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;            /* Making main Div full-screen */
+  /* height: 100vh;             */
 }
 
 .main-content-inner {
@@ -201,7 +218,10 @@ body {
 }
 
 .about-row{
-  text-align: left;
+  padding-left: 4em;
+}
+.section-title{
+  padding-left: 1.5em;
 }
 
 /* .page-taller{

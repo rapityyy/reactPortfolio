@@ -1,6 +1,6 @@
 import './styles.css';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header.js';
 import Navbar from './components/Navbar.js';
 import AboutMe from './pages/About.js';
@@ -13,6 +13,18 @@ import Contact from './pages/Contact.js';
 
 
 function App() {
+  useEffect(() => {
+    const sections = document.querySelectorAll('.section');
+    const content = document.querySelector('.content');
+
+    const totalHeight = Array.from(sections).reduce(
+      (total, section) => total + section.clientHeight,
+      0
+    );
+
+    content.style.height = `${totalHeight}px`;
+  }, []);
+
   return (
     <div className='App-home'>
       <div className='navbar-container'>
@@ -20,25 +32,29 @@ function App() {
       </div>
 
       <div className='content'>
-        <section id='Home' className='page home-section'>
+        <div className='scroll-container'>
+        <section id='Home' className='page home-section section'>
           <Home />
         </section>
 
-        <section id='About' className='about-section page-taller'>
+        <section id='About' className='about-section section'>
           <AboutMe />
         </section>
 
-        <section id='Resume' className='resume-section'>
+        <section id='Resume' className='resume-section section'>
+          <AboutMe2 />
           <Resume />
+          <AboutMe2 />
         </section>
 
-        <section id='Projects' className='projects-section'>
+        <section id='Projects' className='projects-section section'>
           <Projects />
         </section>
 
-        <section id='Contact' className='contact-section'>
+        <section id='Contact' className='contact-section section'>
           <Contact />
         </section>
+        </div>
 
       </div>
     </div>

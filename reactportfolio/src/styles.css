@@ -26,9 +26,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;                /* Make it span the whole vertical same as page */
-
-  z-index: 100;
+  height: 100vh;             
 
   /*TEST color*/
   /* background-color: red;       */
@@ -76,24 +74,6 @@ body {
   margin-left: 80px;  /* Keep same as .navbar-container height */
   color: white;     /* All content text-color = white */
   
-  /* height: 100vh; */
-  /* height: calc(100vh * [number of sections]); */
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-.section{
-  height: 100vh;
-}
-
-.scroll-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 }
 
 .page {
@@ -101,7 +81,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
 
-  /* height: 100vh;  */
+  height: 100vh;  
 }
 
 .home-section{
@@ -164,6 +144,9 @@ body {
   color: #fff;
 }
 
+/* .home-desc{
+  width: 70%;
+} */
 /************************************************************/
 
 
@@ -173,6 +156,7 @@ body {
   justify-content: center;
   align-items: center;
   /* height: 100vh;             */
+  min-height: 100vh;
 }
 
 .main-content-inner {
@@ -218,13 +202,6 @@ body {
 }
 
 .about-row{
-  padding-left: 4em;
-}
-.section-title{
-  padding-left: 1.5em;
-}
-
-.page-taller{
-  height: 250vh;
+  text-align: left;
 }
 

@@ -112,6 +112,125 @@ function AboutMe() {
               </MDBRow>
           </div>
 
+          <div className='about-container-2'>
+            <h4 className='section-title'>What I do</h4>
+            <MDBRow>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Skills</MDBCardTitle>
+                      <MDBCardText>Proficient in HTML, CSS, and JavaScript.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Projects</MDBCardTitle>
+                      <MDBCardText>Developed various web applications using React.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Experience</MDBCardTitle>
+                      <MDBCardText>Worked as a web developer for 3+ years.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+              </MDBRow>
+          </div>
+
+          <div className='about-container-2'>
+            <h4 className='section-title'>What I do</h4>
+            <MDBRow>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Skills</MDBCardTitle>
+                      <MDBCardText>Proficient in HTML, CSS, and JavaScript.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Projects</MDBCardTitle>
+                      <MDBCardText>Developed various web applications using React.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Experience</MDBCardTitle>
+                      <MDBCardText>Worked as a web developer for 3+ years.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+              </MDBRow>
+          </div>
+
+          <div className='about-container-2'>
+            <h4 className='section-title'>What I do</h4>
+            <MDBRow>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Skills</MDBCardTitle>
+                      <MDBCardText>Proficient in HTML, CSS, and JavaScript.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Projects</MDBCardTitle>
+                      <MDBCardText>Developed various web applications using React.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Experience</MDBCardTitle>
+                      <MDBCardText>Worked as a web developer for 3+ years.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+              </MDBRow>
+          </div>
+
+          <div className='about-container-2'>
+            <h4 className='section-title'>What I do</h4>
+            <MDBRow>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Skills</MDBCardTitle>
+                      <MDBCardText>Proficient in HTML, CSS, and JavaScript.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Projects</MDBCardTitle>
+                      <MDBCardText>Developed various web applications using React.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol>
+                  <MDBCard className='about-card-box'>
+                    <MDBCardBody>
+                      <MDBCardTitle>Experience</MDBCardTitle>
+                      <MDBCardText>Worked as a web developer for 3+ years.</MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+              </MDBRow>
+          </div>
           
 
       </div>

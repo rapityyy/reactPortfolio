@@ -112,11 +112,8 @@ function AboutMe() {
               </MDBRow>
           </div>
 
-<<<<<<< HEAD
-=======
           
 
->>>>>>> parent of 5ce6d0e (changed divs into section)
       </div>
     </div>
   );

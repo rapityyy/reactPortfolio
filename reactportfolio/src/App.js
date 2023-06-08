@@ -32,49 +32,24 @@ function App() {
       </div>
 
       <div className='content'>
-<<<<<<< HEAD
-        <div className='scroll-container'>
-        <section id='Home' className='page home-section section'>
-=======
         <div id='Home' className='page home-section'>
->>>>>>> parent of 5ce6d0e (changed divs into section)
           <Home />
         </div>
 
-<<<<<<< HEAD
-        <section id='About' className='about-section section'>
-=======
         <div id='About' className='about-section page-taller'>
->>>>>>> parent of 5ce6d0e (changed divs into section)
           <AboutMe />
         </div>
 
-<<<<<<< HEAD
-        <section id='Resume' className='resume-section section'>
-          <AboutMe2 />
-          <Resume />
-          <AboutMe2 />
-        </section>
-
-        <section id='Projects' className='projects-section section'>
-=======
         <div id='Resume' className='resume-section'>
           <Resume />
         </div>
 
         <div id='Projects' className='projects-section'>
->>>>>>> parent of 5ce6d0e (changed divs into section)
           <Projects />
         </div>
 
-<<<<<<< HEAD
-        <section id='Contact' className='contact-section section'>
-          <Contact />
-        </section>
-=======
         <div id='Contact' className='contact-section'>
           <Contact />
->>>>>>> parent of 5ce6d0e (changed divs into section)
         </div>
 
       </div>

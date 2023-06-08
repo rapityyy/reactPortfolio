@@ -232,7 +232,6 @@ function AboutMe() {
               </MDBRow>
           </div>
           
-
       </div>
     </div>
   );

@@ -36,19 +36,19 @@ function App() {
           <Home />
         </div>
 
-        <div id='About' className='about-section page-taller'>
+        <div id='About' className='about-section page'>
           <AboutMe />
         </div>
 
-        <div id='Resume' className='resume-section'>
+        <div id='Resume' className='resume-section page'>
           <Resume />
         </div>
 
-        <div id='Projects' className='projects-section'>
+        <div id='Projects' className='projects-section page'>
           <Projects />
         </div>
 
-        <div id='Contact' className='contact-section'>
+        <div id='Contact' className='contact-section page'>
           <Contact />
         </div>
 

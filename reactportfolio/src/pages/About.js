@@ -11,9 +11,6 @@ import Logo2 from '../assets/avatar.PNG';
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 import AboutMe2 from './About-page2.js';
-import AboutMeComp from '../components/about-container-2.js';
-
-
 
 
 
@@ -21,7 +18,7 @@ function AboutMe() {
 
   return (
     // <div className='page main-content'>
-    <span className='main-content'>
+    <div className='main-content'>
       <div className='main-content-inner'>    
 
           <div className='about-container'>
@@ -115,8 +112,13 @@ function AboutMe() {
               </MDBRow>
           </div>
 
+<<<<<<< HEAD
+=======
+          
+
+>>>>>>> parent of 5ce6d0e (changed divs into section)
       </div>
-    </span>
+    </div>
   );
 }
 

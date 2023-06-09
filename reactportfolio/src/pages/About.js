@@ -153,7 +153,7 @@ function AboutMe() {
             </div>
             
             <div className='col-md-6 col-lg-4 my-3 aos-init aos-animate'>
-              <div className='feature-box-2'>
+              <div className='feature-box-1'>
                 <div className='feature-icon'><i class="fa-solid fa-laptop-code"></i></div>
                 <div className='feature-content'>
                   <h5>Web Development</h5>
@@ -163,7 +163,7 @@ function AboutMe() {
             </div>
 
             <div className='col-md-6 col-lg-4 my-3 aos-init aos-animate'>
-              <div className='feature-box-3'>
+              <div className='feature-box-1'>
                 <div className='feature-icon'><i class="fa-solid fa-bullseye"></i></div>
                   <div className='feature-content'>
                     <h5>SEO Marketing</h5>

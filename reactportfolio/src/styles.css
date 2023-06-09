@@ -173,37 +173,57 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-media a {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-media i {
-  font-size: 24px;
-}
-
-.about-card-box{
-  background-color: #000 !important;
-}
-
 .about-row{
   text-align: left;
 }
 
 
+.about-right .about-img{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about-right .social-media {
+  bottom: -15px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.about-right .social-media a {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: white;
+  margin: 0 5px;
+  width: 30px;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.about-pic {
+  border-radius: 50%;
+  border: 5px solid orange;
+  margin: auto;
+  overflow: hidden;
+}
+
+.about-nav{
+  display: flex;
+}
+.social-icons{
+  top: -8px;
+  position: relative; 
+}
+
+
+
+.about-card-box{
+  background-color: #000 !important;
+}
+/************************************************************/
+
+
 
 /* CONTACT */
-/* styles.css */
-
-/* Existing CSS styles */
-
 .main-content-contact {
   display: flex;
   justify-content: space-between;
@@ -269,11 +289,49 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #555;
 }
-
-/* Rest of the CSS styles remain the same */
-
+/************************************************************/
 
 
+/* ABOUT Page 2 */
+.title{
+  margin-bottom: 35px;
+}
+
+.feature-box-1, .feature-box-2, .feature-box-3{
+  background-color: #010101;
+}
+
+.feature-box-1{
+  border-radius: 10px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.feature-box-1 i{
+  color: #fff;
+  font-size: 40px;
+  line-height: 60px;
+}
+.feature-box-1 .feature-content{
+  padding-top: 50px;
+}
 
 
+
+
+
+
+/* COMPONENTS CSS */
+/* .justify-content-center{
+  justify-content: center;
+} */
+
+
+
+
+.title{
+  color: green;
+}
 

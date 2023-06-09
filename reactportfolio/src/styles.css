@@ -344,6 +344,12 @@ button[type="submit"]:hover {
 } */
 
 
+.project-tabs{
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 
 .title{

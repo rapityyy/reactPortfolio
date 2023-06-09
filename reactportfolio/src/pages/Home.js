@@ -27,7 +27,7 @@ function Home() {
       <div className='main-content home-main-content'>
         <div className='main-content-inner'>
 
-          <h6>Hello there!, I'm </h6>
+          <h6>Hello there! I'm </h6>
           <h1 className='font-alt'>Anh Le</h1>
           <h4>Web Developer</h4>
           <p className='home-desc'>I'm a passionate web developer with a focus on creating captivating user experiences. I specialize in front-end/back-end development and love turning ideas into stunning and functional websites. Take a look at my work and feel free to get in touch with me.</p>

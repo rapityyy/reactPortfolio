@@ -13,8 +13,22 @@ function Projects() {
   return (
     <div className='page main-content'>
       <div className='main-content-inner'>     
-          <h1>Projects Page</h1>
-          <p>This is the Projects section section of my portfolio website.</p>
+        
+        <div className='title'><h3 className='title'>My Portfolio</h3></div>
+        <div className='project-container'>
+          <div className='tab-container'>
+            <ul className='project-tabs row'>
+              <li>All</li>
+              <li>Apps</li>
+              <li>Websites</li>
+              <li>Others</li>
+            </ul>
+            <div className='projects-content'></div>
+          </div>
+        </div>
+
+        <div></div>
+
       </div>
     </div>
   );

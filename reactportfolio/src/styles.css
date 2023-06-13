@@ -346,9 +346,62 @@ button[type="submit"]:hover {
 
 .project-tabs{
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
 }
 
+.project-tabs li {
+  margin-right: 1rem;
+}
+/* .project-tablist {
+  display: flex;
+  justify-content: center;
+} */
+
+.my-masonry-grid-column {
+  padding-left: 30px;
+  background-clip: padding-box;
+  width: 33.3333%;
+}
+
+.my-masonry-grid {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.my-masonry-grid-column {
+  display: flex;
+
+  width: 33.3333%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.grid-item {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+.grid-item h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.projects-content {
+  min-height: 300px;
+  min-width: 100%; 
+}
+.portfolio-top{
+  display: flex;
+}
 
 
 

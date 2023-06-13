@@ -12,6 +12,30 @@ import Projects from './pages/Projects.js';
 import Contact from './pages/Contact.js';
 
 
+/* Firebase Cloud import */
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCY53HaQgGfArDqOCcQpdhRsVDCtYx9k7U",
+  authDomain: "reactportfolio-10359.firebaseapp.com",
+  projectId: "reactportfolio-10359",
+  storageBucket: "reactportfolio-10359.appspot.com",
+  messagingSenderId: "152571041230",
+  appId: "1:152571041230:web:99b67ad30102a3d698c79f",
+  measurementId: "G-K2RTTKFKG2"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+/*****************************************************************/
+
+
 function App() {
   useEffect(() => {
     const sections = document.querySelectorAll('.section');

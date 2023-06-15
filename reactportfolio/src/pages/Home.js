@@ -25,7 +25,7 @@ function Home() {
       </div>
 
       <div className='main-content home-main-content'>
-        <div className='main-content-inner'>
+        <div className='main-content-inner home-container-inner'>
 
           <h6>Hello there! I'm </h6>
           <h1 className='font-alt'>Anh Le</h1>

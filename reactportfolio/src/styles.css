@@ -84,6 +84,9 @@ body {
   background-color: #000000;
   color: white;
 }
+.home-container-inner{
+  margin-top: 22%;
+}
 
 .about-section{
   /* background-color: wheat; */
@@ -152,11 +155,13 @@ body {
   justify-content: center;
   align-items: center;
 
-  min-height: 100vh;      /* Might not need this?? */
+  /* min-height: 100vh;       */
 }
 
 .main-content-inner {
   text-align: left;
+  min-width: 100%;
+  min-height: 100vh;
 }
 
 .about-container{

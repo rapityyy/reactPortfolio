@@ -12,9 +12,19 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Masonry from 'react-masonry-css';
 
-import spotifyImage from '../assets/spotify.PNG';
-import tttImage from '../assets/ttt.PNG';
-import pokemonImage from '../assets/pokemon.PNG';
+//  TTT
+import tttImage from '../assets/ttt/t1.PNG';
+//  2048
+import twentyImage from '../assets/2048/c1.PNG';
+//  SimonGame
+import simonImage from '../assets/SimonGame/s1.png';
+//  PokemonMatching
+import pokemonImage from '../assets/PokemonMatching/p1.png';
+//  PocketChef
+import chefImage from '../assets/PocketChef/pc1.png';
+//  FlappyCat
+import catImage from '../assets/FlappyCat/FCtitle.png';
+
 
 
 
@@ -23,15 +33,19 @@ import pokemonImage from '../assets/pokemon.PNG';
 function Projects() {
 
   const projects = [
-    { id: 1, title: 'Project 1', image: pokemonImage },
-    { id: 2, title: 'Project 2', image: spotifyImage },
-    { id: 3, title: 'Project 3', image: tttImage, category: 'Apps' },
+    { id: 1, title: 'Project #1 - TicTacToe', image: tttImage, category: 'Apps' },
+    { id: 2, title: 'Project #2 - 2048', image: twentyImage, category: 'Websites' },
+    { id: 3, title: 'Project #3 - SimonGame', image: simonImage, category: 'Websites' },
+    { id: 4, title: 'Project #4 - PokemonMatching', image: pokemonImage, category: 'Websites' },
+    { id: 5, title: 'Project #5 - PocketChef', image: chefImage, category: 'Apps' },
+    { id: 6, title: 'Project #6 - FlappyCat', image: catImage, category: 'Apps' },
+
     // Add more projects as needed
   ];
 
   const breakpointColumnsObj = {
-    default: 2,
-    1200: 1,
+    default: 3,
+    1200: 3,
     768: 1
   };
 
@@ -52,14 +66,16 @@ function Projects() {
                 <Tab>Others</Tab>
               </TabList>
 
+              {/* All apps Tab*/}
               <TabPanel>
                 {projects.length === 0 ? (
                   <p>No projects to display</p>
                 ) : (
                   <Masonry
-                    breakpointCols={3}
+                    breakpointCols={breakpointColumnsObj}
                     className='my-masonry-grid'
                     columnClassName='my-masonry-grid-column'
+                    spacing= {2}
                   >
                     {projects.map((project) => (
                     <div key={project.id} className='grid-item'>
@@ -74,13 +90,15 @@ function Projects() {
                 )}
               </TabPanel>
 
+              {/* Apps Tab*/}
               <TabPanel>
                 {projects.filter((project) => project.category === 'Apps').length === 0 ? (
                   <p>No apps to display</p>
                 ) : (
                   <Masonry
                     breakpointCols={3}
-                    className='my-masonry-grid'
+                    spacing= {10}
+                    // className='my-masonry-grid'
                     columnClassName='my-masonry-grid-column'
                   >
                     {projects
@@ -98,6 +116,55 @@ function Projects() {
                 )}
               </TabPanel>
 
+              {/* Websites Tab*/}
+              <TabPanel>
+                {projects.filter((project) => project.category === 'Websites').length === 0 ? (
+                  <p>No apps to display</p>
+                ) : (
+                  <Masonry
+                    breakpointCols={3}
+                    className='my-masonry-grid'
+                    columnClassName='my-masonry-grid-column'
+                  >
+                    {projects
+                      .filter((project) => project.category === 'Websites')
+                      .map((project) => (
+                        <div key={project.id} className='grid-item'>
+                          <div className='portfolio-top'>
+                            <h3 className='portfolio-title'>{project.title}</h3>
+                            <i className='portfolio-icon fa-solid fa-link'></i>
+                          </div>
+                          <img className='portfolio-img' src={project.image} alt={project.title} />
+                        </div>
+                      ))}
+                  </Masonry>
+                )}
+              </TabPanel>
+              
+              {/* Other Tab*/}
+              <TabPanel>
+                {projects.filter((project) => project.category === 'Others').length === 0 ? (
+                  <p>No apps to display</p>
+                ) : (
+                  <Masonry
+                    breakpointCols={3}
+                    className='my-masonry-grid'
+                    columnClassName='my-masonry-grid-column'
+                  >
+                    {projects
+                      .filter((project) => project.category === 'Others')
+                      .map((project) => (
+                        <div key={project.id} className='grid-item'>
+                          <div className='portfolio-top'>
+                            <h3 className='portfolio-title'>{project.title}</h3>
+                            <i className='portfolio-icon fa-solid fa-link'></i>
+                          </div>
+                          <img className='portfolio-img' src={project.image} alt={project.title} />
+                        </div>
+                      ))}
+                  </Masonry>
+                )}
+              </TabPanel>
 
               {/* Add more TabPanel sections for other categories if needed */}
 

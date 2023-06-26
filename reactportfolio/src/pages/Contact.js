@@ -4,69 +4,83 @@ import React, { useState } from 'react';
 
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 import '../styles.css';
 
 
-// function Contact() {
+import 'bootstrap/dist/css/bootstrap.css';
 
-//   return (
-//     <div className='page main-content'>
-//       <div className='main-content-inner'>     
-//           <h1>Contact Page</h1>
-//           <p>This is the Contact section section of my portfolio website.</p>
-//       </div>
-//     </div>
-//   );
-// }
+// import MapContainer from './Map.js';
 
-// export default Contact;
-
-// src/pages/Contact.js
 
 
 function Contact() {
   return (
     <div className='main-content-contact'>
       <div className='main-content-inner-contact'>
-        <h3>Get in Touch</h3>
-        <p>I'm available for freelance. Feel free to contact me.</p>
-        <div className='contact-row'>
-          <label>&#x1F3E0;</label>
-          <span>123 Street, New York, US, 123456</span>
-        </div>
-        <div className='contact-row'>
-          <label>&#x2709;</label>
-          <span>ale@opgi.com</span>
-        </div>
-        <div className='contact-row'>
-          <label>&#x260E;</label>
-          <span>1234567890</span>
+
+        <div className='contact-info'>
+          <h4>Get in Touch with me!</h4>
+          <p>I'm available for freelance. Feel free to contact me.</p>
+          <ul>
+            <li className='media'>
+              <i class="fa-solid fa-map-location-dot"></i>
+              {/* <label>&#x1F3E0;</label> */}
+              <span>123 Street, New York, US, 123456</span>
+            </li>
+            <li className='media'>
+              <i class="fa-regular fa-envelope"></i>
+              {/* <label>&#x2709;</label> */}
+              <span>ale@opgi.com</span>
+            </li>
+            <li className='media'>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              {/* <label>&#x260E;</label> */}
+              <span>1234567890</span>
+            </li>
+          </ul>
         </div>
       </div>
 
       <div className='contact-form'>
-        <h3>Contact Form</h3>
+        <h4>Contact Form</h4>
         <form>
-          <div className='form-group'>
-            <label htmlFor='name'>Full Name:</label>
-            <input type='text' id='name' />
+          <div className='row'>
+
+            <div className='col-md-6'>
+              <div className='form-group mb-3'>
+                <input type="text" class="form-control theme-light" placeholder="Full name" name="name" id="name"></input>
+              </div>
+            </div>
+
+            <div className='col-md-6 form-group'>
+              <div className='form-group mb-3'>
+                <input type="text" class="form-control theme-light" placeholder="Email" name="email" id="email"></input>
+                </div>
+              </div>
+
+            <div className='col-12 form-group'>
+              <div className='form-group mb-3'>
+                <input type="text" class="form-control theme-light" placeholder="Subject" name="subject" id="subject"></input>
+              </div>
+            </div>
+
+            <div className='col-12 form-group'>
+              <div className='form-group mb-3'>
+                <textarea rows="5" class="form-control theme-light" placeholder="Type comment" name="comment" id="comment"></textarea>
+              </div>
+            </div>
+
+            <div className='col-12 form-group'>
+              <div className='btn-bar'>
+                <button className="px-btn px-btn-white" type='submit'>Send Message</button>
+              </div>
+            </div>
+
+            {/* <MapContainer /> */}
           </div>
-          <div className='form-group'>
-            <label htmlFor='email'>Email:</label>
-            <input type='email' id='email' />
-          </div>
-          <div className='form-group'>
-            <label htmlFor='subject'>Subject:</label>
-            <input type='text' id='subject' />
-          </div>
-          <div className='form-group'>
-            <label htmlFor='comment'>Comment:</label>
-            <textarea id='comment' rows='5'></textarea>
-          </div>
-          <button type='submit'>Send Message</button>
         </form>
       </div>
+
     </div>
   );
 }

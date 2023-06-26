@@ -96,7 +96,7 @@ body {
   background-color: #0b0b13;
 }
 .projects-section{
-  background-color: blue;
+  background-color: #0E0E17;
 }
 .contact-section{
   background-color: purple;
@@ -226,77 +226,6 @@ body {
 }
 /************************************************************/
 
-
-
-/* CONTACT */
-.main-content-contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.main-content-inner-contact {
-  flex-basis: 50%;
-}
-
-.contact-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.contact-row label {
-  font-size: 20px;
-  margin-right: 0.5rem;
-}
-
-.contact-form {
-  flex-basis: 50%;
-}
-
-.contact-form form {
-  margin-top: 2rem;
-  display: grid;
-  gap: 1rem;
-}
-
-.form-group {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.form-group:nth-child(2) {
-  grid-column: 1 / span 2;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button[type="submit"] {
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #555;
-}
-/************************************************************/
-
-
 /* ABOUT Page 2 */
 .title{
   margin-bottom: 35px;
@@ -346,71 +275,195 @@ button[type="submit"]:hover {
 /* COMPONENTS CSS */
 /* .justify-content-center{
   justify-content: center;
-} */
+} 
+.justify-content-start {
+  justify-content: start;
+}*/
 
-
-.project-tabs{
-  display: flex;
-  justify-content: flex-start;
-  list-style-type: none;
-  padding: 0;
+/* Email */
+.project-container {
+  padding-top: 15px;
 }
-
+.project-tabs {
+  margin-bottom: 10px;
+  padding-left: 0;
+}
 .project-tabs li {
   margin-right: 1rem;
 }
-/* .project-tablist {
-  display: flex;
-  justify-content: center;
-} */
-
-.my-masonry-grid-column {
-  padding-left: 30px;
-  background-clip: padding-box;
-  width: 33.3333%;
+.project-tabs .react-tabs__tab--selected {
+  border-bottom: 2px solid yellow;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: yellow;
+}
+.project-tabs .react-tabs__tab-list {
+  border-bottom: none;
+}
+.project-tabs .react-tabs__tab{
+  position: unset;
 }
 
 .my-masonry-grid {
   display: flex;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  margin-left: -16px; /* Negative margin to counteract the padding */
   width: auto;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
-
 .my-masonry-grid-column {
-  display: flex;
-
-  width: 33.3333%;
-  padding: 0 30px;
-  box-sizing: border-box;
+  padding-left: 16px; 
 }
-
 .grid-item {
-  margin-bottom: 30px;
-  width: 100%;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
 }
-
 .grid-item img {
   width: 100%;
   height: auto;
+}
+.grid-item:hover .portfolio-top {
+  opacity: 1;
+  transform: translateY(0);
 }
 .grid-item h3 {
   margin-top: 10px;
   font-size: 16px;
   font-weight: bold;
 }
+
 .projects-content {
   min-height: 300px;
   min-width: 100%; 
 }
-.portfolio-top{
-  display: flex;
-}
-
-
-
 .title{
   color: orange;
 }
 
+.portfolio-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.portfolio-top h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.portfolio-top i {
+  font-size: 20px;
+}
+/************************************************************/
+
+
+/* CONTACT */
+/*
+.main-content-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  margin-left: 3em;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contact-row label {
+  font-size: 20px;
+  margin-right: 0.5rem;
+}
+.contact-form, .contact-form form{
+  margin-top: 2rem;
+}
+.contact-form form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-group:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}*/
+
+.form-control{
+  /* cursor: none; */
+}
+
+@media (max-width: 991px){
+  .contact-info {
+      margin-bottom: 20px;
+  }
+}
+.contact-info h4{
+  font-size: 34px;
+  font-weight: 500;
+}
+.contact-info p, .contact-info li{
+  font-size: 18px;
+}
+.contact-info li{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2;
+  position: relative;
+}
+.contact-info li i{
+  color: yellow;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  width: 30px;
+}
+.contact-info li span{
+  padding-left: 15px;
+}
+
+.media{
+  align-items: flex-start;
+  display: flex!important;
+}
+
+/************************************************************/

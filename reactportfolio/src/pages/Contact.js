@@ -24,17 +24,14 @@ function Contact() {
           <ul>
             <li className='media'>
               <i class="fa-solid fa-map-location-dot"></i>
-              {/* <label>&#x1F3E0;</label> */}
               <span>123 Street, New York, US, 123456</span>
             </li>
             <li className='media'>
               <i class="fa-regular fa-envelope"></i>
-              {/* <label>&#x2709;</label> */}
               <span>ale@opgi.com</span>
             </li>
             <li className='media'>
               <i class="fa-solid fa-mobile-screen-button"></i>
-              {/* <label>&#x260E;</label> */}
               <span>1234567890</span>
             </li>
           </ul>

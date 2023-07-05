@@ -45,7 +45,19 @@ function Projects() {
 
   const breakpointColumnsObj = {
     default: 3,
-    1200: 3,
+    1200: 2,
+    768: 1
+  };
+
+  const breakpointColumnsApps = {
+    default: 3,
+    1200: 2,
+    768: 1
+  };
+
+  const breakpointColumnsWebs = {
+    default: 1,
+    1200: 1,
     768: 1
   };
 
@@ -96,9 +108,8 @@ function Projects() {
                   <p>No apps to display</p>
                 ) : (
                   <Masonry
-                    breakpointCols={3}
-                    spacing= {10}
-                    // className='my-masonry-grid'
+                    breakpointCols={breakpointColumnsApps}
+                    className='my-masonry-grid'
                     columnClassName='my-masonry-grid-column'
                   >
                     {projects
@@ -122,7 +133,7 @@ function Projects() {
                   <p>No apps to display</p>
                 ) : (
                   <Masonry
-                    breakpointCols={3}
+                    breakpointCols={breakpointColumnsWebs}
                     className='my-masonry-grid'
                     columnClassName='my-masonry-grid-column'
                   >
@@ -147,7 +158,7 @@ function Projects() {
                   <p>No apps to display</p>
                 ) : (
                   <Masonry
-                    breakpointCols={3}
+                    breakpointCols={breakpointColumnsObj}
                     className='my-masonry-grid'
                     columnClassName='my-masonry-grid-column'
                   >

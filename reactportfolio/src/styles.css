@@ -101,6 +101,10 @@ body {
 .contact-section{
   background-color: purple;
 }
+
+.skill-progress-bar{
+  padding: 5px;
+}
 /************************************************************/
 
 /************************ HOME ******************************/

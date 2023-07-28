@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import Header from './components/Header.js';
 import Navbar from './components/Navbar.js';
 import AboutMe from './pages/About.js';
-import AboutMe2 from './pages/About-page2.js';
 
 import Home from './pages/Home.js';
 import Resume from './pages/Resume.js';

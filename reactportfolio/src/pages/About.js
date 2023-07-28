@@ -6,11 +6,13 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../styles.css';
 
-import Logo2 from '../assets/avatar.PNG';
+// import Logo2 from '../assets/avatar.PNG';
+
+import Logo2 from '../assets/avatar.jpg';
 
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
-import AboutMe2 from './About-page2.js';
+import { getAllByAltText } from '@testing-library/react';
 
 
 
@@ -79,7 +81,7 @@ function AboutMe() {
                   </a>
                 </div>
               </div>
-              <p>Front/Back-end Designer</p>
+              <p>Front/Back-end Developer</p>
               <h3>Anh Le</h3>
             </div>
           </div>
@@ -94,8 +96,8 @@ function AboutMe() {
               <div className='feature-box-1'>
                 <div className='feature-icon'><i class="fa-solid fa-mobile-screen-button"></i></div>
                 <div className='feature-content'>
-                  <h5>Web Design</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h5>App Development</h5>
+                  <p>Creating stunning web experiences with a focus on front-end and back-end development, I design responsive websites and web applications that leave a lasting impact.</p>
                 </div>
               </div>
             </div>
@@ -104,8 +106,8 @@ function AboutMe() {
               <div className='feature-box-1'>
                 <div className='feature-icon'><i class="fa-solid fa-laptop-code"></i></div>
                 <div className='feature-content'>
-                  <h5>Web Development</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h5>Web Design</h5>
+                  <p>Crafting dynamic and feature-rich websites, I specialize in e-commerce solutions and full-stack development using .NET, HTML, CSS, and JavaScript to deliver seamless user experiences and robust functionality.</p>
                 </div>
               </div>
             </div>
@@ -114,8 +116,8 @@ function AboutMe() {
               <div className='feature-box-1'>
                 <div className='feature-icon'><i class="fa-solid fa-bullseye"></i></div>
                   <div className='feature-content'>
-                    <h5>SEO Marketing</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h5>Selenium Testing</h5>
+                    <p>Enabling efficient and reliable software testing, I excel in creating automated testing frameworks using Selenium and Python, ensuring top-notch quality and seamless performance across applications.</p>
                   </div>
               </div>
             </div>
@@ -130,4 +132,5 @@ function AboutMe() {
 }
 
 export default AboutMe;
+
 

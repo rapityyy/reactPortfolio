@@ -63,7 +63,7 @@ function Projects() {
 
   return (
     <div className='page main-content'>
-      <div className='main-content-inner'>     
+      <div className='main-content-inner entire-project-section'>     
         
         <div className='title'><h3 className='title'>My Portfolio</h3></div>
         <div className='project-container'>

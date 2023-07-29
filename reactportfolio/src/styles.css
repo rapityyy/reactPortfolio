@@ -76,6 +76,7 @@ body {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  padding-top: 2rem;
 
   min-height: 100vh;  
 }
@@ -85,7 +86,9 @@ body {
   color: white;
 }
 .home-container-inner{
-  margin-top: 22%;
+  margin-top: 25rem;
+  padding-left: 20px;
+
 }
 
 .about-section{
@@ -169,6 +172,7 @@ body {
 }
 
 .about-container{
+  padding-top: 5rem;
   justify-content: space-around;
   display:flex;
 }
@@ -224,6 +228,12 @@ body {
 }
 
 
+.about-container-2{
+  padding: 4rem;
+  margin-top: 5rem;
+}
+
+
 
 .about-card-box{
   background-color: #000 !important;
@@ -261,6 +271,7 @@ body {
 /* Resume */
 .experience-container{
   padding-top: 15px;
+  padding: 20px;
 }
 .resume-box-1{
   border-radius: 15px;
@@ -275,6 +286,10 @@ body {
   margin-top: 30px;
 }
 
+.education-container{
+  margin-top: 6rem;
+}
+
 
 /* COMPONENTS CSS */
 /* .justify-content-center{
@@ -285,13 +300,13 @@ body {
 }*/
 
 /* Email */
+.entire-project-section{
+  padding: 3rem;
+}
 .project-container {
   padding-top: 15px;
 }
-.project-tabs {
-  margin-bottom: 10px;
-  padding-left: 0;
-}
+
 .project-tabs li {
   margin-right: 1rem;
 }
@@ -314,6 +329,7 @@ body {
   display: flex;
   margin-left: -16px; /* Negative margin to counteract the padding */
   width: auto;
+  margin-top: 20px;
 }
 .my-masonry-grid-column {
   padding-left: 16px; 
@@ -407,6 +423,14 @@ body {
 /* .form-control{
   cursor: none;
 } */
+.contact-info{
+  padding: 4rem;
+}
+.contact-form{
+  padding: 4rem;
+}
+
+
 
 @media (max-width: 991px){
   .contact-info {

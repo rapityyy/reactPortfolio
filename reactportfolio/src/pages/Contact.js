@@ -10,7 +10,8 @@ import '../styles.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 // import MapContainer from './Map.js';
-
+import Logo2 from '../assets/avatar.jpg';
+import mapGoogle from '../assets/googleMap.JPG';
 
 
 function Contact() {
@@ -71,9 +72,12 @@ function Contact() {
               <div className='btn-bar'>
                 <button className="px-btn px-btn-white" type='submit'>Send Message</button>
               </div>
-            </div>
+          </div>
 
-            {/* <MapContainer /> */}
+            {/* <div className='col-12 form-group'>  
+              <img src={mapGoogle} alt="Westminster CA"></img>
+              
+            </div> */}
           </div>
         </form>
       </div>

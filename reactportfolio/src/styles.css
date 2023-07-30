@@ -80,15 +80,38 @@ body {
 
   min-height: 100vh;  
 }
+/* Background */
+ .home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .home-top-phone-email{
+  color: black !important;
+} */
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  z-index: 1; 
+} 
+/* ******** */
 
 .home-section{
   background-color: #000000;
   color: white;
+  /* color: black; */
+  z-index: 2;
 }
 .home-container-inner{
   margin-top: 25rem;
   padding-left: 20px;
-
+  z-index: 3;
 }
 
 .about-section{
@@ -467,3 +490,75 @@ body {
 }
 
 /************************************************************/
+
+
+/* MOBILE + TABLET */
+/* Add responsive styles for mobile devices */
+@media (max-width: 767px) {
+
+  
+  /* Adjust the font size and line height for better readability on small screens */
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Make the navigation bar full-width and center the icons */
+  .navbar-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Center the logo in the navigation bar */
+  .logo-home {
+    justify-content: center;
+  }
+
+  /* Adjust the margin of the main content for better spacing on small screens */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Center the home section text vertically on small screens */
+  .home-container-inner {
+    margin-top: 10rem;
+    text-align: center;
+  }
+
+  /* Center the contact section information on small screens */
+  .contact-info {
+    text-align: center;
+  }
+
+  /* Make the project grid items stack on top of each other on small screens */
+  .my-masonry-grid {
+    flex-direction: column;
+  }
+  .my-masonry-grid-column {
+    padding-left: 0;
+  }
+
+  /* Adjust the padding and font size in the project cards for small screens */
+  .grid-item {
+    padding: 0;
+  }
+  .grid-item h3 {
+    font-size: 14px;
+  }
+
+}
+
+/* Add responsive styles for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Adjust the font size and line height for better readability on tablets */
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Center the home section text vertically on tablet screens */
+  .home-container-inner {
+    margin-top: 15rem;
+    text-align: center;
+  }
+}

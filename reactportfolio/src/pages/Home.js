@@ -3,9 +3,13 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import '../styles.css';
 
+import bgImg from '../assets/background.jpg';
+
 function Home() {
   return (
-    <div>
+    <div className="home-container">
+      {/* <img src={bgImg} alt="Background" className="background-image" /> */}
+
       <div className='home-top-container'>
         <div className='home-top-phone-email'>
           <div className='phone'>+1 (123)-456-7890</div>
